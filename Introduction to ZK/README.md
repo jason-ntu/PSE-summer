@@ -14,9 +14,11 @@ Summarize each of the following concepts in a few sentences:
 ```
 My Answer:
 
-1. Draw the graph with three colors and make sure that no two adjacent vertices have the same color.
-2. An analogy that leverages the idea of probability to explain that the prover cannot cheat the verifier.
-3. The former requires the verifier to send a challenge to the prover and then receives the prover's response, back and forth. The latter requires that the prover sends a message (i.e. the proof) to the verifier for only one time.
+1. By covering the three-colored graph with hats, discovering the selected pair of vertices, and using a new random shuffle of the three colors, the prover can prove to the verifier that the graph is correctly colored.
+
+2. An analogy that the prover leverages the idea of probability to prove to the verifier that he(she) does own the secret, while in the same time preventing the verifier or the third party from knowing anything more about the secret.
+
+3. The former requires interaction between the prover and the verifier for more than once, while the latter requires interaction for only once.
 ```
 
 ## **Modular Arithmetic**
@@ -87,4 +89,6 @@ modularCalculator('*', 10, 15, 12); // Should return: 6
 
 ```
 
-Feel free to use `console.log` statements in your code to verify that your function is working as expected. For convenience, consider using https://repljs.com/ and pasting in the above code snippet to get started.
+```
+My Answer: Check the file: cal.js in this folder. You can test it by running the command 'npm test' in your terminal.
+```
