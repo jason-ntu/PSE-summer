@@ -1,5 +1,5 @@
 const modular = function(num, mod) {
-    return (num >= 0) ? num % mod : mod - (-1 * num) % mod
+    return ((num % mod) + mod) % mod;
 };
 
 const modularCalculator = function(op, num1, num2, mod) {
