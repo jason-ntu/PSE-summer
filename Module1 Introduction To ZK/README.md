@@ -25,27 +25,27 @@ My Answer:
 
 Solve the following problems and gain a practical understanding of modular arithmetic:
 
-1. $7 mod 13$
-2. $15 mod 13$
-3. $(7+15) mod 13$
-4. $(7 mod 13+15 mod 13) mod 13$
+1. $7 \pmod{13}$
+2. $15 \pmod{13}$
+3. $(7+15) \pmod{13}$
+4. $(7 \pmod{13} + 15 \pmod{13}) \pmod{13}$
 
 If the results of the third and fourth calculations match, they follow a “group structure”. Can you determine if these do?
 
 ```
 My Answer:
 
-1. 7 mod 13
-2. 2 mod 13
-3. 9 mod 13
-4. 9 mod 13
+1. 7 (mod 13)
+2. 2 (mod 13)
+3. 9 (mod 13)
+4. 9 (mod 13)
 
 Yes, they do follow a group structure.
 ```
 
 ## **Generators**
 
-Consider the cyclic group $(Z12,+ mod 12)$, commonly referred to as the “additive group of integers modulo 12”. Address the following points:
+Consider the cyclic group $(Z_{12},+ \pmod{12})$, commonly referred to as the “additive group of integers modulo 12”. Address the following points:
 
 1. What does the term ‘generator’ mean?
 2. Can you find a generator for this group?

@@ -11,7 +11,7 @@ const modularCalculator = function(op, num1, num2, mod) {
         case '*':
             return modular((modular(num1, mod) * modular(num2, mod)), mod)
         default:
-            return 'Invalid operator'
+            return new Error('Invalid operator')
     }
 };
 
