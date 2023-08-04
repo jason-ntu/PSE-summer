@@ -11,23 +11,29 @@ class PedersenCommitment {
     // Generate 'h' with a random number 'r' (h = g^r mod p)
     generateH() {
         // TODO: Generate a random number r (and save it to this.r)
+        this.r = BigInt(Math.floor(Math.random() * 10 + 1));
         // TODO: Calculate h using g, r and p (and save it to this.h)
+        this.h = this.g ** this.r % this.p;
     }
 
     // Generate the commitment (g^s * h^r mod p)
     generateCommitment(s) {
         // TODO: Convert s to BigInt (and save it to this.s)
+        this.s = BigInt(s);
         // TODO: Calculate and return the commitment using g, s, h, r and p
+        return (this.g ** BigInt(s) * this.h ** this.r) % this.p;
     }
 
     // Reveal the secret number and random number (s, r)
     reveal() {
         // TODO: Return the secret and random number
+        return { s: this.s, r: this.r };
     }
 
     // Verify the commitment (g^s * h^r mod p)
     verify(s, r, C) {
         // TODO: Verify the commitment by recalculating it and comparing with C
+        return C === (this.g ** BigInt(s) * this.h ** BigInt(r)) % this.p;
     }
 }
 
