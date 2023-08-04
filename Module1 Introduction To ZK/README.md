@@ -8,17 +8,22 @@ Reference: [Module 1 - Intro to ZK](https://pse-team.notion.site/Module-1-Intro-
 Summarize each of the following concepts in a few sentences:
 
 1. Three-Colouring Graph problem with Hats
+
+
+```
+By covering the three-colored graph with hats, discovering the selected pair of vertices, and using a new random shuffle of the three colors, the prover can prove to the verifier that the graph is correctly colored.
+```
+
 2. Ali Baba’s Cave analogy
+
+```
+An analogy that the prover leverages the idea of probability to prove to the verifier that he(she) does own the secret, while in the same time preventing the verifier or the third party from knowing anything more about the secret.
+```
+
 3. The difference between interactive and non-interactive proofs
 
 ```
-My Answer:
-
-1. By covering the three-colored graph with hats, discovering the selected pair of vertices, and using a new random shuffle of the three colors, the prover can prove to the verifier that the graph is correctly colored.
-
-2. An analogy that the prover leverages the idea of probability to prove to the verifier that he(she) does own the secret, while in the same time preventing the verifier or the third party from knowing anything more about the secret.
-
-3. The former requires interaction between the prover and the verifier for more than once, while the latter requires interaction for only once.
+The former requires interaction between the prover and the verifier for more than once, while the latter requires interaction for only once.
 ```
 
 ## **Modular Arithmetic**
@@ -26,20 +31,32 @@ My Answer:
 Solve the following problems and gain a practical understanding of modular arithmetic:
 
 1. $7 \pmod{13}$
+
+```
+7 (mod 13)
+```
+
 2. $15 \pmod{13}$
+
+```
+2 (mod 13)
+```
+
 3. $(7+15) \pmod{13}$
+
+```
+9 (mod 13)
+```
+
 4. $(7 \pmod{13} + 15 \pmod{13}) \pmod{13}$
+
+```
+9 (mod 13)
+```
 
 If the results of the third and fourth calculations match, they follow a “group structure”. Can you determine if these do?
 
 ```
-My Answer:
-
-1. 7 (mod 13)
-2. 2 (mod 13)
-3. 9 (mod 13)
-4. 9 (mod 13)
-
 Yes, they do follow a group structure.
 ```
 
@@ -48,15 +65,21 @@ Yes, they do follow a group structure.
 Consider the cyclic group $(Z_{12},+ \pmod{12})$, commonly referred to as the “additive group of integers modulo 12”. Address the following points:
 
 1. What does the term ‘generator’ mean?
+
+```
+An element of a group that can be used to generate all the other elements.
+```
+
 2. Can you find a generator for this group?
+
+```
+Yes, 1 is a generator for this group.
+```
+
 3. Are there other generators for this group? If yes, what are they?
 
 ```
-My Answer:
-
-1. An element of a group that can be used to generate all the other elements.
-2. Yes, 1 is a generator for this group.
-3. Yes, 5, 7, and 11 are also generators for this group (Basically all the numbers that are coprime to 12). 
+Yes, 5, 7, and 11 are also generators for this group (Basically all the numbers that are coprime to 12). 
 ```
 
 

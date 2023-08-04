@@ -5,21 +5,39 @@ Reference: [Module 2 - Crypto Primitives](https://pse-team.notion.site/Module-2-
 ## **Written Questions**
 
 1. **Symmetric vs. Asymmetric Encryption**: What are the key differences between symmetric and asymmetric encryption? Provide a practical use case for each.
+
+```
+Symmetric encryption uses the same key to encrypt and decrypt data. Asymmetric encryption uses a public key to encrypt data and a private key to decrypt data. Symmetric encryption is faster than asymmetric encryption. Asymmetric encryption is more secure than symmetric encryption. Symmetric encryption is used to encrypt data in transit. Asymmetric encryption is used to encrypt data at rest.
+```
+
 2. **Public-Key Cryptography and Key Exchange Protocols**: How can the Diffie-Hellman protocol enhance security in a messaging application?
+
+```
+The Diffie-Hellman protocol can be used to exchange a secret key between two parties. The secret key can then be used to encrypt and decrypt messages between the two parties. This ensures that only the two parties can read the messages.
+```
+
 3. **Hash Functions**: What features make SHA-256 and Poseidon good hash functions for ensuring data integrity? Mention one unique advantage of Poseidon.
+
+```
+SHA-256 and Poseidon are both resistant to preimage attacks and collisions. Since Poseidon is designed for ZKP, it has a relatively efficient arithmetic design.
+```
+
 4. **Merkle Trees**: Explain how Merkle trees can help verify data in a large database efficiently.
+
+```
+Merkle trees can be used to verify data in a large database efficiently by using a hash tree. The root of the hash tree can be used to verify the integrity of the entire database. If the root hash is the same, then the database has not been tampered with.
+```
+
 5. **Cryptographic Commitments**: How can Pedersen Commitments be used in a blockchain protocol to maintain transaction privacy?
+
+```
+Pedersen Commitments can be used in a blockchain protocol to maintain transaction privacy by hiding the amount of the transaction. The sender can commit to the amount of the transaction without revealing it. The receiver can verify the amount of the transaction without revealing it.
+```
+
 6. **Digital Signatures**: How can you verify the authenticity of a digitally signed document?
 
 ```
-My Answer:
-
-1. Symmetric encryption uses the same key to encrypt and decrypt data. Asymmetric encryption uses a public key to encrypt data and a private key to decrypt data. Symmetric encryption is faster than asymmetric encryption. Asymmetric encryption is more secure than symmetric encryption. Symmetric encryption is used to encrypt data in transit. Asymmetric encryption is used to encrypt data at rest.
-2. The Diffie-Hellman protocol can be used to exchange a secret key between two parties. The secret key can then be used to encrypt and decrypt messages between the two parties. This ensures that only the two parties can read the messages.
-3. SHA-256 and Poseidon are both resistant to preimage attacks and collisions. Since Poseidon is designed for ZKP, it has a relatively efficient arithmetic design.
-4. Merkle trees can be used to verify data in a large database efficiently by using a hash tree. The root of the hash tree can be used to verify the integrity of the entire database. If the root hash is the same, then the database has not been tampered with.
-5. Pedersen Commitments can be used in a blockchain protocol to maintain transaction privacy by hiding the amount of the transaction. The sender can commit to the amount of the transaction without revealing it. The receiver can verify the amount of the transaction without revealing it.
-6. You can verify the authenticity of a digitally signed document by using the public key of the signer to verify the signature. If the signature is valid, then the document is authentic.
+You can verify the authenticity of a digitally signed document by using the public key of the signer to verify the signature. If the signature is valid, then the document is authentic.
 ```
 
 ## **Programming Challenges**
